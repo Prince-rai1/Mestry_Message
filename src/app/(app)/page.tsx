@@ -17,6 +17,7 @@ import Autoplay from "embla-carousel-autoplay";
 import messages from "@/messages.json";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
+import { MessageCircle } from "lucide-react";
 
 function page() {
   const router = useRouter();
@@ -25,10 +26,8 @@ function page() {
 
   return (
     <>
-      <main
-        className=" relative min-h-screen w-full overflow-hidden bg-linear-to-br from-gray-800 via-gray-900 to-black "
-      >
-        <div className="mx-auto w-full max-w-7xl px-6 mt-10">
+      <main className=" relative min-h-screen w-full overflow-hidden bg-linear-to-br from-gray-800 via-gray-900 to-black ">
+        <div className="mx-auto w-full max-w-7xl px-4 mt-6 sm:px-6 sm:mt-10">
           {/* Background Glow */}
 
           <div className="absolute -left-40 -top-40 h-128 w-lg rounded-full bg-blue-600/20 blur-[170px]" />
@@ -42,13 +41,11 @@ function page() {
           <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-size-[60px_60px]" />
 
           <section className="relative z-10 flex min-h-[90vh] flex-col items-center justify-center text-center">
-            <span className=" mb-6 rounded-full border border-blue-500/20 bg-blue-500/10 px-5 py-2 text-sm font-medium text-blue-300 ">
+            <span className=" mb-6 rounded-full border border-blue-500/20 bg-blue-500/10 px-4 py-2 text-xs sm:px-5 sm:text-sm font-medium text-blue-300 ">
               ✨ AI Powered Anonymous Messaging
             </span>
 
-            <h1
-              className=" max-w-5xl bg-linear-to-r from-white via-blue-300 to-violet-400 bg-clip-text text-5xl font-extrabold leading-tight text-transparent md:text-7xl "
-            >
+            <h1 className=" max-w-5xl bg-linear-to-r from-white via-blue-300 to-violet-400 bg-clip-text text-3xl sm:text-5xl lg:text-7xl font-extrabold leading-tight text-transparent ">
               Honest Conversations.
               <br />
               Zero Identity.
@@ -56,17 +53,15 @@ function page() {
               Infinite Possibilities.
             </h1>
 
-            <p
-              className=" mt-8 max-w-2xl text-lg leading-8 text-zinc-400 "
-            >
+            <p className=" mt-8 max-w-2xl text-base leading-7 sm:text-lg sm:leading-8 text-zinc-400 ">
               Mystery Message lets anyone send completely anonymous messages
               while keeping every conversation secure, private and engaging.
             </p>
 
-            <div className="mt-10 flex flex-wrap justify-center gap-5">
+            <div className="mt-8 flex w-full flex-col gap-4 sm:mt-10 sm:w-auto sm:flex-row sm:justify-center">
               <Button
                 size="lg"
-                className=" h-14 rounded-2xl bg-linear-to-r from-blue-600 via-violet-600 to-cyan-600 px-8 text-base transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/30 "
+                className=" h-12 w-full sm:h-14 sm:w-auto rounded-2xl bg-linear-to-r from-blue-600 via-violet-600 to-cyan-600 px-8 text-base transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/30 "
               >
                 🚀 Get Started
               </Button>
@@ -95,7 +90,7 @@ function page() {
 
             {/* Stats */}
 
-            <div className="mt-20 grid gap-6 md:grid-cols-3">
+            <div className="mt-20 grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-6">
               <div className="rounded-2xl border border-white/10 bg-white/5 px-8 py-6 backdrop-blur-xl">
                 <h2 className="text-4xl font-bold text-white">100%</h2>
 
@@ -130,18 +125,18 @@ function page() {
               Why Mystery Message?
             </span>
 
-            <h2 className="mt-6 text-5xl font-bold text-white">
+            <h2 className="mt-6 text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
               Built for Honest Conversations
             </h2>
 
-            <p className="mx-auto mt-5 max-w-3xl text-lg leading-8 text-zinc-400">
+            <p className="mx-auto mt-5 max-w-3xl text-base sm:text-lg leading-8 text-zinc-400">
               Share your unique profile, receive anonymous feedback, generate AI
               powered conversation starters and enjoy a clean, modern
               experience.
             </p>
           </div>
 
-          <div className="mx-auto mt-20 grid max-w-7xl gap-6 lg:grid-cols-4">
+          <div className="mx-auto mt-20 grid max-w-7xl grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {/* BIG CARD */}
 
             <div
@@ -153,7 +148,7 @@ function page() {
       border
       border-white/10
       bg-white/5
-      p-8
+      p-6 sm:p-8
       backdrop-blur-xl
       transition-all
       duration-300
@@ -167,11 +162,11 @@ function page() {
               <div className="absolute -right-20 -top-20 h-60 w-60 rounded-full bg-blue-500/10 blur-3xl" />
 
               <div className="relative">
-                <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-linear-to-br from-blue-500 to-cyan-500 text-3xl">
+                <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-linear-to-br from-blue-500 to-cyan-500 text-2xl sm:text-3xl">
                   🔒
                 </div>
 
-                <h3 className="text-3xl font-bold text-white">
+                <h3 className="text-2xl sm:text-3xl font-bold text-white">
                   Complete Privacy
                 </h3>
 
@@ -191,7 +186,7 @@ function page() {
       border
       border-white/10
       bg-white/5
-      p-8
+      p-6 sm:p-8
       backdrop-blur-xl
       transition-all
       duration-300
@@ -202,7 +197,7 @@ function page() {
             >
               <div className="text-4xl">🤖</div>
 
-              <h3 className="mt-5 text-2xl font-bold text-white">
+              <h3 className="mt-5 text-xl sm:text-2xl font-bold text-white">
                 AI Suggestions
               </h3>
 
@@ -231,7 +226,7 @@ function page() {
             >
               <div className="text-4xl">⚡</div>
 
-              <h3 className="mt-5 text-2xl font-bold text-white">
+              <h3 className="mt-5 text-xl sm:text-2xl  font-bold text-white">
                 Lightning Fast
               </h3>
 
@@ -249,7 +244,7 @@ function page() {
       border
       border-white/10
       bg-white/5
-      p-8
+      p-6 sm:p-8
       backdrop-blur-xl
       transition-all
       duration-300
@@ -263,7 +258,7 @@ function page() {
                 <div>
                   <div className="text-4xl">💬</div>
 
-                  <h3 className="mt-4 text-3xl font-bold text-white">
+                  <h3 className="mt-4 text-2xl sm:text-3xl font-bold text-white">
                     Unlimited Anonymous Messages
                   </h3>
 
@@ -281,7 +276,7 @@ function page() {
         <div className="flex justify-center items-center mt-32">
           <Carousel
             plugins={[plugin.current]}
-            className="w-full max-w-md"
+            className="w-full max-w-xs sm:max-w-md"
             onMouseEnter={plugin.current.stop}
             onMouseLeave={plugin.current.reset}
           >
@@ -293,7 +288,7 @@ function page() {
                       className="
           group
           relative
-          h-107.5
+          min-h-105 sm:h-107.5
           overflow-hidden
           rounded-[30px]
           border
@@ -334,7 +329,7 @@ function page() {
                   to-cyan-500
                   "
                             >
-                              💬
+                            <MessageCircle className="text-white"/>
                             </div>
 
                             <div>
@@ -342,7 +337,7 @@ function page() {
                                 Anonymous
                               </p>
 
-                              <h2 className="text-xl font-bold text-white">
+                              <h2 className="text-sm sm:text-xl font-bold text-white">
                                 {message.title}
                               </h2>
                             </div>
@@ -368,13 +363,13 @@ function page() {
 
                       {/* Message */}
 
-                      <CardContent className="relative flex h-55 items-center">
+                      <CardContent className="relative flex min-h-45 sm:h-55 items-center">
                         <blockquote
                           className="
               text-center
-              text-xl
+              text-base sm:text-xl
               italic
-              leading-9
+              leading-7 sm:leading-9
               text-zinc-300
               "
                         >
@@ -419,6 +414,7 @@ function page() {
   -left-20
   h-14
   w-14
+  hidden sm:flex
   border
   border-white/10
   bg-zinc-900/80
@@ -435,6 +431,7 @@ function page() {
             <CarouselNext
               className="
   -right-20
+  hidden sm:flex
   h-14
   w-14
   border
@@ -501,11 +498,10 @@ function page() {
         via-blue-300
         to-violet-400
         bg-clip-text
-        text-5xl
+        text-3xl sm:text-5xl lg:text-6xl
         font-extrabold
         leading-tight
         text-transparent
-        md:text-6xl
         "
               >
                 Start Receiving Honest Anonymous Feedback
@@ -516,7 +512,7 @@ function page() {
         mx-auto
         mt-8
         max-w-2xl
-        text-lg
+        text-base sm:text-lg
         leading-8
         text-zinc-400
         "
@@ -598,8 +594,8 @@ function page() {
       {/* ================= FOOTER ================= */}
 
       <footer className="relative z-10 mt-32 border-t border-white/10">
-        <div className="mx-auto max-w-7xl px-6 py-16">
-          <div className="grid gap-12 md:grid-cols-4">
+        <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-16 ">
+          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
             {/* Logo */}
 
             <div className="md:col-span-2">
@@ -623,7 +619,7 @@ function page() {
                 </div>
 
                 <div>
-                  <h2 className="text-2xl font-bold text-white">
+                  <h2 className="text-xl sm:text-2xl font-bold text-white">
                     Mystery Message
                   </h2>
 
@@ -702,7 +698,7 @@ function page() {
               © 2026 Mystery Message. All rights reserved.
             </p>
 
-            <div className="flex flex-wrap items-center gap-3">
+            <div className="flex flex-col gap-6 text-center md:flex-row md:items-center md:justify-between md:text-left">
               <span className="rounded-full border border-blue-500/20 bg-blue-500/10 px-4 py-2 text-sm text-blue-300">
                 Next.js
               </span>

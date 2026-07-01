@@ -81,28 +81,19 @@ function VerifyAccount() {
     <div className="relative min-h-screen overflow-hidden bg-linear-to-br from-slate-950 via-slate-900 to-black">
       {/* Background Glow */}
 
-      <div className="absolute -left-40 -top-40 h-128 w-lg rounded-full bg-blue-600/20 blur-[180px]" />
+      <div className="absolute -left-40 -top-40 h-72 w-72 sm:h-128 sm:w-lg rounded-full bg-blue-600/20 blur-[180px]" />
 
-      <div className="absolute right-0 top-1/3 h-120 w-120 rounded-full bg-violet-600/20 blur-[180px]" />
+      <div className="absolute right-0 top-1/3 h-64 w-64 sm:h-120 sm:w-120 rounded-full bg-violet-600/20 blur-[180px]" />
 
-      <div className="absolute bottom-0 left-1/3 h-100 w-100 rounded-full bg-cyan-500/10 blur-[160px]" />
+      <div className="absolute bottom-0 left-1/3 h-52 w-52 sm:h-100 sm:w-100 rounded-full bg-cyan-500/10 blur-[160px]" />
 
       {/* Grid */}
 
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-size-[60px_60px]" />
 
-      <div className="relative z-10 flex min-h-screen items-center justify-center px-6 py-20">
+      <div className="relative z-10 flex min-h-screen items-center justify-center px-4 py-10 sm:px-6 sm:py-16 lg:py-20">
         <Card
-          className="
-        w-full
-        max-w-xl
-        rounded-[32px]
-        border
-        border-white/10
-        bg-zinc-900/70
-        backdrop-blur-2xl
-        shadow-[0_20px_80px_rgba(0,0,0,.45)]
-        "
+         className=" w-full max-w-md sm:max-w-lg lg:max-w-xl rounded-[24px] sm:rounded-[32px] border border-white/10 bg-zinc-900/70 backdrop-blur-2xl shadow-[0_20px_80px_rgba(0,0,0,.45)] "
         >
           <CardHeader className="space-y-6">
             <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-3xl bg-linear-to-br from-blue-600 via-violet-600 to-cyan-500 shadow-xl shadow-blue-500/30">
@@ -148,12 +139,12 @@ function VerifyAccount() {
                               key={index}
                               index={index}
                               className="
-                            h-14
-                            w-14
+                             h-10 w-10 sm:h-12 sm:w-12 lg:h-14 lg:w-14
                             rounded-xl
                             border-zinc-700
+                            gap-1 sm:gap-2
                             bg-zinc-800
-                            text-lg
+                            text-base sm:text-lg
                             font-bold
                             text-white
                             transition-all
@@ -194,7 +185,7 @@ function VerifyAccount() {
                 type="submit"
                 disabled={isSubmitting}
                 className="
-              h-12
+              h-11 sm:h-12
               w-full
               rounded-xl
               bg-blue-600
@@ -224,8 +215,8 @@ function VerifyAccount() {
             <Separator className="bg-zinc-700" />
           </div>
 
-          <CardFooter className="justify-center py-6 bg-linear-to-br from-slate-950 via-slate-900 to-black">
-            <p className="text-center text-xs leading-6 text-white">
+          <CardFooter className="justify-center px-6 py-5 sm:py-6 bg-linear-to-br from-slate-950 via-slate-900 to-black">
+            <p className="text-center text-[11px] sm:text-xs leading-6 text-white">
               Didn't receive the code? Check your spam folder or request a new
               verification email.
             </p>
