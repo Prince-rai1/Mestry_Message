@@ -83,7 +83,7 @@ function page() {
       <div className="relative z-10 mx-auto flex max-w-5xl flex-col gap-8 px-6 py-14">
         {/* Hero */}
         <div className="text-center">
-          <h1 className="bg-linear-to-r from-blue-400 via-violet-400 to-cyan-300 bg-clip-text text-5xl font-extrabold text-transparent">
+          <h1 className="bg-linear-to-r from-blue-400 via-violet-400 to-cyan-300 bg-clip-text sm:text-5xl text-4xl font-extrabold text-transparent">
             Anonymous Message
           </h1>
 
